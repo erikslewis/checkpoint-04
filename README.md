@@ -27,7 +27,10 @@ Demonstrate calling the method, passing in "young prince" as the argument.
 
 Write your code here:
 ```ruby
-# code here
+def offer_rose(person)
+"offer_rose" + person
+end
+puts ("Would you take this rose, young prince, in exchange for giving an old beggar woman shelter from the bitter cold?")
 ```
 
 ### Question 2
@@ -50,7 +53,7 @@ add her to the list of guests in the castle.
 
 Write your code here:
 ```ruby
-# code here
+guests.push residents.delete_at(1)
 ```
 
 ### Question 3
@@ -72,7 +75,8 @@ Belle is friends with Mrs. Potts
 
 Write your code here:
 ```ruby
-# code here
+ Belle, %s, is friends with %s % ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
+puts Belle , is friends with
 ```
 ## Ruby OOP (meets Lion King)
 
@@ -97,7 +101,29 @@ Each lion should have:
 Create a new lion instance with the name `simba`
 
 ```ruby
-# code here
+class Animal
+  def initialize(name, greet, Pumba)
+@name = name
+@greet = greet
+@Pumba = Pumba
+end
+
+def Pumba
+  @Pumba
+end
+
+
+attr_accessor :name, :greet, :Pumba
+
+class Lion < Animal
+  def initialize(pack, simba)
+    @pack = pack
+    @simba = simba
+
+    attr_accessor :king
+
+    if @simba.name == king
+  return
 ```
 
 ## SQL, Databases, and ActiveRecord (meets Aladdin)
@@ -114,7 +140,8 @@ entities (no need to draw an ERD):
 
 Your answer:
 ```
-Replace this with your answer
+entity-relationship diagram
+s a data modeling technique that graphically illustrates an information system's entities and the relationships between those entities. An ERD is a conceptual and representational model of data used to represent the entity framework infrastructure.
 ```
 
 ### Question 6
